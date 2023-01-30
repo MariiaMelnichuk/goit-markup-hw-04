@@ -15,7 +15,8 @@ html {
     --white-color: #ffffff;
     --white-text-color: #E7E9FC;
     --button-bg-color: #F4F4FD;
-    --footer-bgk-color: #31D0AA;}
+    --footer-bgk-color: #31D0AA;
+    --customers-brends-color: #8e8f99;}
 
 body {
     color: var(--primary-text-color);
@@ -215,6 +216,8 @@ margin-left: 76px;
 .icon-list{
     display: flex;
     margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-list .item{
@@ -421,9 +424,9 @@ margin-left: 76px;
     width: 168px;
     height: 88px;
     
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--customers-brends-color);
     border-radius: 4px;
-    color: var(--accent-color-hero-hover);
+    color: var(--customers-brends-color);
 }
 
 .customers-link:hover,
@@ -435,6 +438,10 @@ margin-left: 76px;
 
 .customers-icon {
     fill: currentColor
+}
+
+.customers-icon:hover{
+    color: var(--accent-color-hero-hover);
 }
 
 /* footer*/
